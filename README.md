@@ -1,16 +1,22 @@
-# React + Vite
+# 📘 Dashboard de Jugadores de Fútbol — Examen React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descripción del Proyecto
+Este proyecto es un Dashboard interactivo desarrollado en React como parte del examen final. Permite buscar jugadores con debounce, ordenar columnas, ver estadísticas generadas dinámicamente, paginar resultados, abrir un modal con detalles del jugador, gestionar favoritos y almacenar información en localStorage. La aplicación está construida con una arquitectura basada en componentes ubicados dentro de la carpeta src/components. La estructura del proyecto es: examen-react/, public/, src/, src/components/, src/components/SearchBar, src/components/SearchHistory, src/components/PlayerTable, src/components/Pagination, src/components/StatsPanel, src/components/Modal, src/components/ThemeToggle, src/data/players.js, App.jsx, main.jsx, package.json y vite.config.js.
 
-Currently, two official plugins are available:
+## Instrucciones de Instalación
+Para ejecutar este proyecto localmente se debe clonar el repositorio correspondiente y luego ejecutar el comando npm install para instalar las dependencias necesarias. Una vez instaladas, se inicia el servidor de desarrollo ejecutando npm run dev y luego se abre en el navegador la URL que entrega Vite (por lo general http://localhost:5173).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+##  Lista de Hooks Utilizados y Explicación
+El proyecto utiliza varios hooks principales. useState: maneja estados como búsqueda, debounce, historial, favoritos, modal, paginación y ordenamiento. useEffect: ejecuta efectos secundarios como guardar datos en localStorage, aplicar el debounce, resetear la página cuando cambian filtros y limpiar temporizadores cuando es necesario. useMemo: optimiza cálculos como el promedio de edad, el máximo goleador y el total de jugadores filtrados para evitar recomputaciones innecesarias.
 
-## React Compiler
+##  Estructura de Carpetas y Componentes
+El proyecto contiene una arquitectura organizada dentro de la carpeta src. Allí se encuentran los componentes SearchBar, SearchHistory, PlayerTable, Pagination, StatsPanel, Modal y ThemeToggle, cada uno encargado de una parte de la interfaz. La carpeta src/data contiene players.js con los datos base de los jugadores. App.jsx contiene toda la lógica global aplicada en conjunto y main.jsx monta la aplicación. Esta estructura facilita la modularidad, reutilización y mantenimiento del código.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+##  Nombres de los Integrantes
+Este proyecto fue realizado individualmente por la estudiante Yuliana Granada.
 
-## Expanding the ESLint configuration
+##  Link al Deploy de Netlify
+El enlace al deploy en Netlify será agregado tras publicar la versión final.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+##  IA Utilizada
+Se utilizó ChatGPT de OpenAI como herramienta de apoyo en la redacción, estructura y soporte técnico general.
